@@ -452,7 +452,7 @@
 
         /* ========== RESPONSIVE ========== */
 
-        /* Tablet grande / desktop pequeno — 4 cols ⟹ 2 cols */
+        /* Tablet grande / desktop pequeno — 4 cols → 2 cols */
         @media (max-width: 1080px) {
             .prod-grid { grid-template-columns: 1fr 1fr; }
         }
@@ -485,7 +485,167 @@
             .cta-section h2 { font-size: 1.4rem; }
             .cta-buttons { flex-direction: column; align-items: center; }
             .btn-whatsapp { padding: 16px 32px; font-size: 1rem; width: 100%; justify-content: center; }
-            .btn-site { padding: 14px 32pxGráficos de Alta Performance",
+            .btn-site { padding: 14px 32px; width: 100%; justify-content: center; }
+            .contact-info { flex-direction: column; align-items: center; gap: 10px; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .sobre-text h2 { font-size: 1.5rem; }
+        }
+
+        /* Mobile pequeno */
+        @media (max-width: 420px) {
+            .hero-stats { flex-direction: column; gap: 16px; }
+            .diff-grid { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+            .prod-image { height: 220px; }
+            .sobre-destaques { flex-direction: column; align-items: center; }
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD: Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "MV Equipamentos e Locações",
+        "alternateName": "MV Equipamentos",
+        "url": "https://mvequipamentos.com",
+        "logo": "https://mvequipamentos.com/wp-content/uploads/2021/03/MV-sem-fundo-300x100-1.png",
+        "description": "Venda de equipamentos gráficos de alta performance: guilhotinas elétricas e hidráulicas, laminadoras profissionais, máquinas laser CO2 e Fiber, encadernadoras hot melt. Garantia, suporte técnico e entrega em todo Brasil.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Brasília",
+            "addressLocality": "Salto",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55-11-98470-8884",
+            "contactType": "sales",
+            "areaServed": "BR",
+            "availableLanguage": "Portuguese"
+        },
+        "sameAs": [
+            "https://mvequipamentos.com",
+            "https://www.instagram.com/mvequipamentos"
+        ]
+    }
+    </script>
+
+    <!-- Schema.org JSON-LD: LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "MV Equipamentos e Locações",
+        "image": "https://mvequipamentos.com/wp-content/uploads/2021/03/MV-sem-fundo-300x100-1.png",
+        "url": "https://mvequipamentos.com",
+        "telephone": "+55-11-98470-8884",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Brasília",
+            "addressLocality": "Salto",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -23.2,
+            "longitude": -47.29
+        },
+        "priceRange": "$$",
+        "openingHours": "Mo-Fr 08:00-18:00",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+        }
+    }
+    </script>
+
+    <!-- Schema.org JSON-LD: Products -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Equipamentos Gráficos MV Equipamentos",
+        "description": "Linhas de equipamentos gráficos profissionais para produção gráfica",
+        "numberOfItems": 4,
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "Product",
+                    "name": "Guilhotinas Elétricas e Hidráulicas",
+                    "description": "Linha completa de guilhotinas elétricas e hidráulicas para corte preciso de papel e materiais gráficos. Modelos: 450V+, 4606, 4808T, 500V9, 670PX, 670RTS, 9211. Corte de 450mm até 920mm com precisão de +/-0,5mm.",
+                    "brand": {"@type": "Brand", "name": "MV Equipamentos"},
+                    "image": "https://mvequipamentos.com/wp-content/uploads/2025/05/0-Guilhotinas-670PX-600x600.jpg",
+                    "offers": {
+                        "@type": "Offer",
+                        "availability": "https://schema.org/InStock",
+                        "areaServed": "BR",
+                        "warranty": "2 anos de garantia"
+                    }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@type": "Product",
+                    "name": "Laminadoras e Termolaminadoras Profissionais",
+                    "description": "Termolaminadoras, laminadoras UV e de mesa para acabamento profissional. Modelos: 3800A, 390E, 720E, 360V9, UV650, UV480. Laminação a quente e a frio, envernizadoras UV.",
+                    "brand": {"@type": "Brand", "name": "MV Equipamentos"},
+                    "image": "https://mvequipamentos.com/wp-content/uploads/2025/05/0-laminadora-3800A.jpg",
+                    "offers": {
+                        "@type": "Offer",
+                        "availability": "https://schema.org/InStock",
+                        "areaServed": "BR"
+                    }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                    "@type": "Product",
+                    "name": "Máquinas Laser CO2 e Fiber",
+                    "description": "Máquinas de corte e gravação a laser CO2 e Fiber para diversos materiais. Modelos: STORM 6040, LC 1390, Fiber 30W. Corta MDF, acrílico, couro, tecido, papel, borracha.",
+                    "brand": {"@type": "Brand", "name": "MV Equipamentos"},
+                    "image": "https://mvequipamentos.com/wp-content/uploads/2025/05/0-storm-6040-e1761134581474.jpg",
+                    "offers": {
+                        "@type": "Offer",
+                        "availability": "https://schema.org/InStock",
+                        "areaServed": "BR"
+                    }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                    "@type": "Product",
+                    "name": "Encadernadoras Hot Melt",
+                    "description": "Encadernadoras profissionais com cola quente (hot melt) para acabamento de livros, apostilas, catálogos e revistas. Modelos: 50R, PB-380, M60, G470. Velocidade de 200 a 450 livros/hora.",
+                    "brand": {"@type": "Brand", "name": "MV Equipamentos"},
+                    "image": "https://mvequipamentos.com/wp-content/uploads/2025/05/0-encadernadora-G470-600x600.jpg",
+                    "offers": {
+                        "@type": "Offer",
+                        "availability": "https://schema.org/InStock",
+                        "areaServed": "BR"
+                    }
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org JSON-LD: WebPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "MV Equipamentos - Equipamentos Gráficos de Alta Performance",
         "description": "Guilhotinas, laminadoras, laser CO2/Fiber e encadernadoras hot melt com garantia e suporte técnico. Entrega em todo Brasil.",
         "url": "https://tiagofds2308-bot.github.io/mv-equipamentos-landing/",
         "inLanguage": "pt-BR",
@@ -549,15 +709,15 @@
                     <p>Meu compromisso é garantir que você tenha não apenas a melhor máquina, mas também o melhor suporte — do primeiro contato ao pós-venda.</p>
                     <div class="sobre-destaques">
                         <div class="sobre-dest-item">
-                            <div class="sobre-dest-icon">🌎</div>
+                            <div class="sobre-dest-icon">&#127758;</div>
                             +20 anos no mercado
                         </div>
                         <div class="sobre-dest-item">
-                            <div class="sobre-dest-icon">📦</div>
+                            <div class="sobre-dest-icon">&#128230;</div>
                             Importação direta
                         </div>
                         <div class="sobre-dest-item">
-                            <div class="sobre-dest-icon">🤝</div>
+                            <div class="sobre-dest-icon">&#129309;</div>
                             Atendimento pessoal
                         </div>
                     </div>
@@ -586,22 +746,22 @@
             </div>
             <div class="diff-grid">
                 <div class="diff-card">
-                    <div class="diff-icon">🛠️</div>
+                    <div class="diff-icon">&#128736;</div>
                     <h3>Suporte Próprio e Direto</h3>
                     <p>Atendimento sem terceirização. Nossa equipe resolve direto com você, com peças à pronta entrega e técnicos especializados.</p>
                 </div>
                 <div class="diff-card">
-                    <div class="diff-icon">💪</div>
+                    <div class="diff-icon">&#128170;</div>
                     <h3>Garantia Real</h3>
                     <p>Até 2 anos de garantia em guilhotinas e 1 ano nos demais equipamentos. Suporte técnico em até 24h.</p>
                 </div>
                 <div class="diff-card">
-                    <div class="diff-icon">🎓</div>
+                    <div class="diff-icon">&#127891;</div>
                     <h3>Treinamento Incluso</h3>
                     <p>Capacitação para que você se torne o técnico da sua própria produção, com autonomia e segurança operacional.</p>
                 </div>
                 <div class="diff-card">
-                    <div class="diff-icon">🚚</div>
+                    <div class="diff-icon">&#128666;</div>
                     <h3>Entrega em Todo Brasil</h3>
                     <p>Entrega rápida e segura de norte a sul. Negociação que cabe no seu bolso.</p>
                 </div>
@@ -631,13 +791,13 @@
                     <div class="prod-body">
                         <p>Linha completa de guilhotinas elétricas e hidráulicas para corte preciso de papel e materiais gráficos.</p>
                         <ul class="prod-specs">
-                            <li><span class="check">✓</span> Modelos: 450V+, 4606, 4808T, 500V9, 670PX, 670RTS, 9211</li>
-                            <li><span class="check">✓</span> Corte de 450mm até 920mm</li>
-                            <li><span class="check">✓</span> Motor hidráulico importado de alta durabilidade</li>
-                            <li><span class="check">✓</span> Painel LCD Touch Screen com controle digital</li>
-                            <li><span class="check">✓</span> Até 100 memórias e 20 programações de corte</li>
-                            <li><span class="check">✓</span> Sensor infravermelho de segurança</li>
-                            <li><span class="check">✓</span> Precisão de +/-0,5mm</li>
+                            <li><span class="check">&#10003;</span> Modelos: 450V+, 4606, 4808T, 500V9, 670PX, 670RTS, 9211</li>
+                            <li><span class="check">&#10003;</span> Corte de 450mm até 920mm</li>
+                            <li><span class="check">&#10003;</span> Motor hidráulico importado de alta durabilidade</li>
+                            <li><span class="check">&#10003;</span> Painel LCD Touch Screen com controle digital</li>
+                            <li><span class="check">&#10003;</span> Até 100 memórias e 20 programações de corte</li>
+                            <li><span class="check">&#10003;</span> Sensor infravermelho de segurança</li>
+                            <li><span class="check">&#10003;</span> Precisão de +/-0,5mm</li>
                         </ul>
                     </div>
                 </div>
@@ -654,13 +814,13 @@
                     <div class="prod-body">
                         <p>Termolaminadoras, laminadoras UV e de mesa para acabamento profissional com alta qualidade.</p>
                         <ul class="prod-specs">
-                            <li><span class="check">✓</span> Modelos: 3800A, 390E, 720E, 360V9, UV650, UV480 e mais</li>
-                            <li><span class="check">✓</span> Laminação a quente e a frio / Envernizadoras UV</li>
-                            <li><span class="check">✓</span> Aquecimento a óleo com alta estabilidade</li>
-                            <li><span class="check">✓</span> Temperatura: 0-120°C | Velocidade: até 13m/min</li>
-                            <li><span class="check">✓</span> Laminação frente e verso, foil e flat</li>
-                            <li><span class="check">✓</span> Compactas, fáceis de operar e mover</li>
-                            <li><span class="check">✓</span> Ideais para gráficas, estúdios e embalagens</li>
+                            <li><span class="check">&#10003;</span> Modelos: 3800A, 390E, 720E, 360V9, UV650, UV480 e mais</li>
+                            <li><span class="check">&#10003;</span> Laminação a quente e a frio / Envernizadoras UV</li>
+                            <li><span class="check">&#10003;</span> Aquecimento a óleo com alta estabilidade</li>
+                            <li><span class="check">&#10003;</span> Temperatura: 0-120°C | Velocidade: até 13m/min</li>
+                            <li><span class="check">&#10003;</span> Laminação frente e verso, foil e flat</li>
+                            <li><span class="check">&#10003;</span> Compactas, fáceis de operar e mover</li>
+                            <li><span class="check">&#10003;</span> Ideais para gráficas, estúdios e embalagens</li>
                         </ul>
                     </div>
                 </div>
@@ -677,13 +837,13 @@
                     <div class="prod-body">
                         <p>Máquinas de corte e gravação a laser CO2 e Fiber para os mais diversos materiais e aplicações.</p>
                         <ul class="prod-specs">
-                            <li><span class="check">✓</span> Modelos: STORM 6040, LC 1390, STORM 1490, LC 1325, Fiber 30W</li>
-                            <li><span class="check">✓</span> Área útil de 60x40cm até 130x250cm</li>
-                            <li><span class="check">✓</span> Tubo laser de 40W a 130W</li>
-                            <li><span class="check">✓</span> Corta MDF, acrílico, couro, tecido, papel, borracha</li>
-                            <li><span class="check">✓</span> Controle DSP | Mesa colmeia + faca</li>
-                            <li><span class="check">✓</span> Acompanha: bomba de ar, chiller, ferramentas</li>
-                            <li><span class="check">✓</span> Ideal para brindes, carimbos, decoração, personalização</li>
+                            <li><span class="check">&#10003;</span> Modelos: STORM 6040, LC 1390, STORM 1490, LC 1325, Fiber 30W</li>
+                            <li><span class="check">&#10003;</span> Área útil de 60x40cm até 130x250cm</li>
+                            <li><span class="check">&#10003;</span> Tubo laser de 40W a 130W</li>
+                            <li><span class="check">&#10003;</span> Corta MDF, acrílico, couro, tecido, papel, borracha</li>
+                            <li><span class="check">&#10003;</span> Controle DSP | Mesa colmeia + faca</li>
+                            <li><span class="check">&#10003;</span> Acompanha: bomba de ar, chiller, ferramentas</li>
+                            <li><span class="check">&#10003;</span> Ideal para brindes, carimbos, decoração, personalização</li>
                         </ul>
                     </div>
                 </div>
@@ -700,13 +860,13 @@
                     <div class="prod-body">
                         <p>Encadernadoras profissionais com cola quente (hot melt) para acabamento de livros, apostilas, catálogos e revistas.</p>
                         <ul class="prod-specs">
-                            <li><span class="check">✓</span> Modelos: 50R, PB-380, M60, G470</li>
-                            <li><span class="check">✓</span> Encadernação A4 até 380mm</li>
-                            <li><span class="check">✓</span> Espessura de 40mm até 60mm</li>
-                            <li><span class="check">✓</span> Velocidade: 200 a 450 livros/hora</li>
-                            <li><span class="check">✓</span> Cola lateral automática (modelo 50R)</li>
-                            <li><span class="check">✓</span> Alimentação automática de capa (modelo G470)</li>
-                            <li><span class="check">✓</span> Do compacto manual ao totalmente automático</li>
+                            <li><span class="check">&#10003;</span> Modelos: 50R, PB-380, M60, G470</li>
+                            <li><span class="check">&#10003;</span> Encadernação A4 até 380mm</li>
+                            <li><span class="check">&#10003;</span> Espessura de 40mm até 60mm</li>
+                            <li><span class="check">&#10003;</span> Velocidade: 200 a 450 livros/hora</li>
+                            <li><span class="check">&#10003;</span> Cola lateral automática (modelo 50R)</li>
+                            <li><span class="check">&#10003;</span> Alimentação automática de capa (modelo G470)</li>
+                            <li><span class="check">&#10003;</span> Do compacto manual ao totalmente automático</li>
                         </ul>
                         <a href="https://www.youtube.com/shorts/tnyb9tr0uY4" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:#c41e1e;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-size:0.85rem;font-weight:700;letter-spacing:0.5px;transition:all 0.3s;">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
@@ -774,23 +934,23 @@
     <!-- LEAD CAPTURE -->
     <section class="lead-capture" id="catalogo">
         <div class="container">
-            <div class="lead-icon">📋</div>
+            <div class="lead-icon">&#128229;</div>
             <h2>Receba nosso <span>Catálogo Completo</span></h2>
             <p class="lead-desc">Preencha abaixo e receba gratuitamente o catálogo com todos os equipamentos, especificações técnicas e condições especiais.</p>
             <form class="lead-form" id="leadForm" action="https://formsubmit.co/tiagofds@me.com" method="POST">
                 <input type="text" name="nome" placeholder="Seu nome" required>
                 <input type="email" name="email" placeholder="Seu melhor e-mail" required>
                 <input type="text" name="whatsapp" placeholder="WhatsApp (DDD + número)" required>
-                <input type="hidden" name="_subject" value="🔥 Novo Lead - Landing Page MV Equipamentos">
+                <input type="hidden" name="_subject" value="&#128293; Novo Lead - Landing Page MV Equipamentos">
                 <input type="hidden" name="_next" value="https://tiagofds2308-bot.github.io/mv-equipamentos-landing/#obrigado">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
                 <input type="text" name="_honey" style="display:none">
-                <button type="submit">📧 Quero o Catálogo</button>
+                <button type="submit">&#128231; Quero o Catálogo</button>
             </form>
             <p class="lead-privacy">Seus dados estão seguros. Não enviamos spam.</p>
             <div class="lead-success" id="leadSuccess">
-                ✅ Pronto! Você receberá o catálogo em breve. Obrigado pelo interesse!
+                &#9989; Pronto! Você receberá o catálogo em breve. Obrigado pelo interesse!
             </div>
         </div>
     </section>
@@ -807,13 +967,13 @@
                     (11) 98470-8884 — WhatsApp
                 </a>
                 <a href="https://mvequipamentos.com" target="_blank" class="btn-site">
-                    🌎 Visite nosso site
+                    &#127758; Visite nosso site
                 </a>
             </div>
             <div class="contact-info">
-                <div class="contact-item">👤 Tiago Ferreira — Gerente Comercial</div>
-                <div class="contact-item">🌎 mvequipamentos.com</div>
-                <div class="contact-item">📍 Av. Brasil, Salto - SP</div>
+                <div class="contact-item">&#128100; Tiago Ferreira — Gerente Comercial</div>
+                <div class="contact-item">&#127758; mvequipamentos.com</div>
+                <div class="contact-item">&#128205; Av. Brasília, Salto - SP</div>
             </div>
         </div>
     </section>
