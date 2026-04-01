@@ -386,6 +386,31 @@
         .prod-specs li:last-child { border-bottom: none; }
         .prod-specs .check { color: var(--primary); font-weight: 700; flex-shrink: 0; }
 
+        /* ========== DEPOIMENTOS ========== */
+        .depoimentos { padding: 72px 20px; background: linear-gradient(135deg, var(--black) 0%, #1a0505 50%, var(--black-soft) 100%); color: var(--white); position: relative; }
+        .depoimentos::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--primary), transparent); }
+        .depo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; margin-top: 44px; }
+        .depo-card {
+            background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px; padding: 32px 28px; position: relative; transition: all 0.3s;
+        }
+        .depo-card:hover { border-color: var(--primary); background: rgba(255,255,255,0.06); transform: translateY(-3px); }
+        .depo-stars { color: #f5a623; font-size: 1rem; letter-spacing: 2px; margin-bottom: 16px; }
+        .depo-text { font-size: 0.92rem; line-height: 1.7; opacity: 0.88; font-style: italic; margin-bottom: 20px; }
+        .depo-author { display: flex; align-items: center; gap: 14px; }
+        .depo-avatar {
+            width: 48px; height: 48px; border-radius: 50%; background: var(--primary);
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 800; font-size: 1.1rem; color: var(--white); flex-shrink: 0;
+        }
+        .depo-info { text-align: left; }
+        .depo-name { font-weight: 700; font-size: 0.9rem; }
+        .depo-role { font-size: 0.78rem; opacity: 0.5; margin-top: 2px; }
+        .depo-stats { display: flex; justify-content: center; gap: 48px; margin-top: 48px; flex-wrap: wrap; }
+        .depo-stat { text-align: center; }
+        .depo-stat-number { font-size: 2.2rem; font-weight: 900; color: var(--primary); }
+        .depo-stat-label { font-size: 0.78rem; opacity: 0.6; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+
         /* ========== GALERIA ========== */
         .galeria { padding: 64px 20px; background: var(--black); color: var(--white); }
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 40px; }
@@ -875,6 +900,66 @@
                     <div class="diff-icon">&#128666;</div>
                     <h3>Entrega em Todo Brasil</h3>
                     <p>Entrega rápida e segura de norte a sul. Negociação que cabe no seu bolso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <div class="section-title">
+                <div class="decoration-line"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+                <h2 style="color:var(--white)">O que nossos <span>clientes</span> dizem</h2>
+                <p style="color:rgba(255,255,255,0.5)">Quem compra, recomenda</p>
+            </div>
+            <div class="depo-grid">
+                <div class="depo-card">
+                    <div class="depo-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="depo-text">"Compramos a Guilhotina 670PX e a Laminadora UV 480. Equipamentos robustos, chegaram no prazo e o Tiago acompanhou tudo pessoalmente. Suporte excelente no pós-venda."</p>
+                    <div class="depo-author">
+                        <div class="depo-avatar">A</div>
+                        <div class="depo-info">
+                            <div class="depo-name">Américo S.</div>
+                            <div class="depo-role">Digigrafics — Fortaleza/CE</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="depo-card">
+                    <div class="depo-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="depo-text">"Já é a quarta compra com a MV. Começamos com uma alimentadora, depois encadernadora, vincadeira e agora a laminadora Flat 1732. Sempre evoluindo com confiança."</p>
+                    <div class="depo-author">
+                        <div class="depo-avatar">M</div>
+                        <div class="depo-info">
+                            <div class="depo-name">Mavimix Adesivos</div>
+                            <div class="depo-role">Rio de Janeiro/RJ</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="depo-card">
+                    <div class="depo-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="depo-text">"Montamos toda a linha de acabamento com a MV — guilhotina, encadernadora, grampeador e laminadora. Treinamento incluso e suporte rápido quando precisamos."</p>
+                    <div class="depo-author">
+                        <div class="depo-avatar">P</div>
+                        <div class="depo-info">
+                            <div class="depo-name">Pigmento Gráfica</div>
+                            <div class="depo-role">Brasília/DF</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="depo-stats">
+                <div class="depo-stat">
+                    <div class="depo-stat-number">+500</div>
+                    <div class="depo-stat-label">Equipamentos vendidos</div>
+                </div>
+                <div class="depo-stat">
+                    <div class="depo-stat-number">27</div>
+                    <div class="depo-stat-label">Estados atendidos</div>
+                </div>
+                <div class="depo-stat">
+                    <div class="depo-stat-number">+10 anos</div>
+                    <div class="depo-stat-label">No mercado gráfico</div>
                 </div>
             </div>
         </div>
